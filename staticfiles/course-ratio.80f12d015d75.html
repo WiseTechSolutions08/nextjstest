@@ -1,0 +1,1589 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta content="width=device-width" name="viewport"/>
+  <meta charset="utf-8"/>
+  <title>
+   Wellco UpSkill React NextJs Template
+  </title>
+  <link href="favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
+  <meta content="4" name="next-head-count"/>
+  <link as="style" href='{% static "/_next/static/css/93942ac8a896644f.css" %}' rel="preload"/>
+  <link data-n-g="" href='{% static "/_next/static/css/93942ac8a896644f.css" %}' rel="stylesheet"/>
+  <noscript data-n-css="">
+  </noscript>
+  <script defer="" nomodule="" src='{% static "/_next/static/chunks/polyfills-5cd94c89d3acac5f.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/webpack-98009c24c517fa8c.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/framework-81eee04dc9c81fd8.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/main-be926a39b31f2a04.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/pages/_app-f91f698cba9abeb9.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/75fc9c18-0edeb0e157862525.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/9956-daf8e164ee1dc1e0.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/6710-cd14807a2c821640.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/3068-12bb8ba912b89872.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/9294-c7f73bf81ed8ffc9.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/6869-9a1777bab5a6d906.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/pages/course-ratio-068894dc2323aad4.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/ihjsRGGSqixX7gJIFIymI/_buildManifest.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/ihjsRGGSqixX7gJIFIymI/_ssgManifest.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/ihjsRGGSqixX7gJIFIymI/_middlewareManifest.js" %}'>
+  </script>
+ </head>
+ <body>
+  <div data-reactroot="" id="__next">
+   <div class="preloader">
+    <img alt="preloader" src="assets/images/preloader.svg"/>
+   </div>
+   <aside class="aside_bar aside_bar_left aside_mobile">
+    <a class="logo" href="/">
+     <img alt="logo" src="assets/images/logo1.png"/>
+    </a>
+    <nav>
+     <ul class="main-menu">
+      <li class="menu-item">
+       <a href="http://localhost:3000/">
+        Home
+       </a>
+      </li>
+      <li class="menu-item menu-item-has-children">
+       <a href="#">
+        Courses
+       </a>
+       <ul class="sub-menu" style="display:none">
+        <li class="menu-item">
+         <a href="/courses">
+          Apptitude
+         </a>
+        </li>
+        <li class="menu-item">
+         <a href="/reasoning">
+          Reasoning
+         </a>
+        </li>
+        <li class="menu-item">
+         <a href="/verbal">
+          Verbal
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="menu-item">
+       <a href="/mock">
+        Mock Test
+       </a>
+      </li>
+      <li class="menu-item">
+       <a href="#">
+        Login
+       </a>
+      </li>
+      <li class="menu-item">
+       <a href="/contact">
+        Contacts
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </aside>
+   <div class="aside-overlay trigger-left">
+   </div>
+   <aside class="aside_bar aside_bar_right aside_canvas">
+    <a class="logo pl-0" href="/">
+     <img alt="logo" src="assets/images/logo.png"/>
+    </a>
+    <p>
+     Sed ut perspiciatis unde omnis iste natus error voluptatem accan tium doloremque laudantium totam rem aperiam
+    </p>
+    <div class="sidebar">
+     <div class="sidebar_widget recent_widgets">
+      <h5 class="widget_title">
+       Popular Courses
+      </h5>
+      <ul>
+       <li>
+        <div class="image">
+         <img alt="img" class="image-fit" src="assets/images/coach/small_1.jpg"/>
+        </div>
+        <div class="text">
+         <h6 class="mb-0">
+          <a href="/course-details">
+           How to Become a Life Coach Partner
+          </a>
+         </h6>
+         <p class="mb-0">
+          <strong>
+           By
+          </strong>
+          <a href="/courses">
+           John Foerster
+          </a>
+         </p>
+        </div>
+       </li>
+       <li>
+        <div class="image">
+         <img alt="img" class="image-fit" src="assets/images/coach/small_2.jpg"/>
+        </div>
+        <div class="text">
+         <h6 class="mb-0">
+          <a href="/course-details">
+           How to Solve Health Problem
+          </a>
+         </h6>
+         <p class="mb-0">
+          <strong>
+           By
+          </strong>
+          <a href="/courses">
+           David Sullivan
+          </a>
+         </p>
+        </div>
+       </li>
+       <li>
+        <div class="image">
+         <img alt="img" class="image-fit" src="assets/images/coach/small_3.jpg"/>
+        </div>
+        <div class="text">
+         <h6 class="mb-0">
+          <a href="/course-details">
+           Getting Started Expres And JavaScript
+          </a>
+         </h6>
+         <p class="mb-0">
+          <strong>
+           By
+          </strong>
+          <a href="/courses">
+           Zachary Morin
+          </a>
+         </p>
+        </div>
+       </li>
+      </ul>
+     </div>
+     <div class="sidebar_widget">
+      <h5 class="widget_title">
+       Popular Tags
+      </h5>
+      <div class="tags">
+       <a href="/blog-grid">
+        Business
+       </a>
+       <a href="/blog-grid">
+        Corporate
+       </a>
+       <a href="/blog-grid">
+        HTML
+       </a>
+       <a href="/blog-grid">
+        Art
+       </a>
+       <a href="/blog-grid">
+        Finance
+       </a>
+       <a href="/blog-grid">
+        Investment
+       </a>
+       <a href="/blog-grid">
+        CSS
+       </a>
+       <a href="/blog-grid">
+        Coach
+       </a>
+       <a href="/blog-grid">
+        Planing
+       </a>
+       <a href="/blog-grid">
+        Creative
+       </a>
+       <a href="/blog-grid">
+        Health
+       </a>
+      </div>
+     </div>
+    </div>
+   </aside>
+   <div class="aside-overlay trigger-right">
+   </div>
+   <header class="header header-3" id="header-sticky">
+    <div class="topbar bg-thm-color-two" id="header_top">
+     <div class="container">
+      <div class="row">
+       <div class="col-lg-7">
+        <div class="left-side">
+        </div>
+       </div>
+       <div class="col-lg-5">
+        <ul class="right-side">
+         <li>
+          <a href="tel:0123456789">
+           <i class="fal fa-phone">
+           </i>
+           Call : 012(345) 67 89
+          </a>
+         </li>
+         <li>
+          <a href="mailto:example@example.com">
+           <i class="fal fa-envelope">
+           </i>
+           example@example.com
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="nav_sec">
+     <div class="container">
+      <div class="nav_warp">
+       <nav>
+        <div class="logo">
+         <a href="/">
+          <img alt="logo" class="image-fit" src="assets/images/logo1.png"/>
+         </a>
+        </div>
+        <ul class="main-menu">
+         <li class="menu-item">
+          <a href="http://localhost:3000/">
+           Home
+          </a>
+         </li>
+         <li class="menu-item menu-item-has-children">
+          <a href="#">
+           Courses
+          </a>
+          <ul class="sub-menu">
+           <li class="menu-item">
+            <a href="/courses">
+             Apptitude
+            </a>
+           </li>
+           <li class="menu-item">
+            <a href="/reasoning">
+             Reasoning
+            </a>
+           </li>
+           <li class="menu-item">
+            <a href="/verbal">
+             Verbal
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="menu-item">
+          <a href="/mock">
+           Mock Test
+          </a>
+         </li>
+         <li class="menu-item">
+          <a href="#">
+           Login
+          </a>
+         </li>
+         <li class="menu-item">
+          <a href="/contact">
+           Contacts
+          </a>
+         </li>
+         <li class="menu-item search_trigger">
+          <a href="#">
+           <i class="fas fa-search">
+           </i>
+          </a>
+         </li>
+        </ul>
+        <div class="head_actions">
+         <a class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle" href="/contact">
+          Enroll Now
+          <i class="fal fa-chevron-right ml-2">
+          </i>
+         </a>
+         <button class="head_trigger mobile_trigger" type="button">
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+         </button>
+        </div>
+       </nav>
+      </div>
+     </div>
+    </div>
+    <div class="search-form-wrapper">
+     <div class="close-search-trigger close_trigger">
+      <span>
+      </span>
+      <span>
+      </span>
+     </div>
+     <form class="search-form">
+      <input placeholder="Search..." required="" type="text"/>
+      <button class="search-btn" type="submit">
+       <i class="fal fa-search m-0">
+       </i>
+      </button>
+     </form>
+    </div>
+   </header>
+   <div class="subheader relative z-1" style="background-image:url(assets/images/banner-appi.png)">
+    <div class="container relative z-1">
+     <div class="row">
+      <div class="col-12">
+       <h1 class="page_title">
+        Time and Work
+       </h1>
+       <div class="page_breadcrumb">
+        <nav aria-label="breadcrumb">
+         <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+           <a href="/">
+            Home
+           </a>
+          </li>
+          <li aria-current="page" class="breadcrumb-item active">
+           Time and Work
+          </li>
+         </ol>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <img alt="element" class="element_1 slideRightTwo" src="assets/images/elements/element_19.png"/>
+     <img alt="element" class="element_2 zoom-fade icon-default-height" src="assets/images/elements/element10.png"/>
+     <img alt="element" class="element_3 rotate_elem" src="assets/images/elements/element_20.png"/>
+     <img alt="element" class="element_4 rotate_elem" src="assets/images/elements/element_21.png"/>
+    </div>
+   </div>
+   <section class="section">
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-8">
+       <div class="course_details mb-md-80 wow fadeInDown">
+        <div class="nav nav-tabs style_4 nav" role="tablist">
+         <div class="nav-item">
+          <a aria-selected="true" class="nav-link active" data-rb-event-key="description" data-toggle="tab" href="#description" role="tab">
+           Course Content
+          </a>
+         </div>
+         <div class="nav-item">
+          <a aria-selected="false" class="nav-link" data-rb-event-key="curriculum" data-toggle="tab" href="#curriculum" role="tab">
+           Overview
+          </a>
+         </div>
+         <div class="nav-item">
+          <a aria-selected="false" class="nav-link" data-rb-event-key="reviews" data-toggle="tab" href="#reviews" role="tab">
+           Partice Test
+          </a>
+         </div>
+        </div>
+        <div class="tab-content tab-content">
+         <div aria-hidden="false" class="fade tab-pane fade tab-pane active show" role="tabpanel">
+          <div class="section-padding faqs_elements">
+           <div class="container relative z-1">
+            <div class="row justify-content-center">
+             <div class="col-xl-9 col-lg-11">
+              <div class="nav nav-tabs style_3 wow fadeInUp nav" role="tablist">
+              </div>
+              <div class="tab-content wow fadeInDown tab-content">
+               <div aria-hidden="false" class="fade tab-pane fade show tab-pane active show" role="tabpanel">
+                <div class="accordion accordion-style style_2 mb-xl-30 accordion" id="tutorialsaccordion">
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="TutorialsItemOneundefined" type="button">
+                    Section 1
+                   </button>
+                  </div>
+                  <div class="collapse show" data-parent="#tutorialsaccordion" id="TutorialsItemOneundefined">
+                   <div class="card-body">
+                    Introduction
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemTwo" type="button">
+                    Section 2
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemTwoundefined">
+                   <div class="card-body">
+                    Time and Work - 1
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemThree" type="button">
+                    Section 3
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemThreeundefined">
+                   <div class="card-body">
+                    Time and work - 2
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemFour" type="button">
+                    Section 4
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemFourundefined">
+                   <div class="card-body">
+                    Time and Work - 3
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemFive" type="button">
+                    Section 5
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemFiveundefined">
+                   <div class="card-body">
+                    Time and work - 4
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemSix" type="button">
+                    Section 6
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemSixundefined">
+                   <div class="card-body">
+                    Time and work - 5
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemSeven" type="button">
+                    Section 7
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemSevenundefined">
+                   <div class="card-body">
+                    Time and work - 6
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div aria-hidden="true" class="fade tab-pane fade tab-pane" role="tabpanel">
+                <div class="accordion accordion-style style_2 mb-xl-30 accordion" id="tutorialsaccordion">
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="TutorialsItemOneundefined" type="button">
+                    Section 1
+                   </button>
+                  </div>
+                  <div class="collapse show" data-parent="#tutorialsaccordion" id="TutorialsItemOneundefined">
+                   <div class="card-body">
+                    Introduction
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemTwo" type="button">
+                    Section 2
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemTwoundefined">
+                   <div class="card-body">
+                    Time and Work - 1
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemThree" type="button">
+                    Section 3
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemThreeundefined">
+                   <div class="card-body">
+                    Time and work - 2
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemFour" type="button">
+                    Section 4
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemFourundefined">
+                   <div class="card-body">
+                    Time and Work - 3
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemFive" type="button">
+                    Section 5
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemFiveundefined">
+                   <div class="card-body">
+                    Time and work - 4
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemSix" type="button">
+                    Section 6
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemSixundefined">
+                   <div class="card-body">
+                    Time and work - 5
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemSeven" type="button">
+                    Section 7
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemSevenundefined">
+                   <div class="card-body">
+                    Time and work - 6
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div aria-hidden="true" class="fade tab-pane fade tab-pane" role="tabpanel">
+                <div class="accordion accordion-style style_2 mb-xl-30 accordion" id="tutorialsaccordion">
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="TutorialsItemOneundefined" type="button">
+                    Section 1
+                   </button>
+                  </div>
+                  <div class="collapse show" data-parent="#tutorialsaccordion" id="TutorialsItemOneundefined">
+                   <div class="card-body">
+                    Introduction
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemTwo" type="button">
+                    Section 2
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemTwoundefined">
+                   <div class="card-body">
+                    Time and Work - 1
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemThree" type="button">
+                    Section 3
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemThreeundefined">
+                   <div class="card-body">
+                    Time and work - 2
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemFour" type="button">
+                    Section 4
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemFourundefined">
+                   <div class="card-body">
+                    Time and Work - 3
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemFive" type="button">
+                    Section 5
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemFiveundefined">
+                   <div class="card-body">
+                    Time and work - 4
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemSix" type="button">
+                    Section 6
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemSixundefined">
+                   <div class="card-body">
+                    Time and work - 5
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemSeven" type="button">
+                    Section 7
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemSevenundefined">
+                   <div class="card-body">
+                    Time and work - 6
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div aria-hidden="true" class="fade tab-pane fade tab-pane" role="tabpanel">
+                <div class="accordion accordion-style style_2 mb-xl-30 accordion" id="tutorialsaccordion">
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="TutorialsItemOneundefined" type="button">
+                    Section 1
+                   </button>
+                  </div>
+                  <div class="collapse show" data-parent="#tutorialsaccordion" id="TutorialsItemOneundefined">
+                   <div class="card-body">
+                    Introduction
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemTwo" type="button">
+                    Section 2
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemTwoundefined">
+                   <div class="card-body">
+                    Time and Work - 1
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemThree" type="button">
+                    Section 3
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemThreeundefined">
+                   <div class="card-body">
+                    Time and work - 2
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemFour" type="button">
+                    Section 4
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemFourundefined">
+                   <div class="card-body">
+                    Time and Work - 3
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemFive" type="button">
+                    Section 5
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemFiveundefined">
+                   <div class="card-body">
+                    Time and work - 4
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemSix" type="button">
+                    Section 6
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemSixundefined">
+                   <div class="card-body">
+                    Time and work - 5
+                   </div>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header">
+                   <button class="btn btn-link" data-target="#TutorialsItemSeven" type="button">
+                    Section 7
+                   </button>
+                  </div>
+                  <div class="collapse" data-parent="#tutorialsaccordion" id="TutorialsItemSevenundefined">
+                   <div class="card-body">
+                    Time and work - 6
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="fade tab-pane fade tab-pane" role="tabpanel">
+          <h5>
+           About The Course
+          </h5>
+          <p>
+           Time and work deals with the time taken by an individual or a group of individuals to complete a piece of work and the efficiency of the work done by each of them.
+           <!-- -->
+          </p>
+          <hr/>
+          <h5>
+           Description
+          </h5>
+          <p align="justify">
+           Cognitive ability tests assess abilities involved in thinking (e.g., reasoning, perception, memory, verbal and mathematical ability, and problem solving). Such tests pose questions designed to estimate applicants' potential to use mental processes to solve work-related problems or to acquire new job knowledge. Traditionally, the general trait measured by cognitive ability tests is called "intelligence" or "general mental ability." However, an intelligence test often includes various item types which measure different and more specific mental factors often referred to as "specific mental abilities." Examples of such items include arithmetic computations, verbal analogies, reading comprehension, number series completion, and spatial relations (i.e., visualizing objects in three-dimensional space). Some cognitive ability tests sum up the correct answers to all of the items to obtain an overall score that represents a measure of general mental ability. If an individual score is computed for each of the specific types of abilities (e.g., numeric, verbal, reasoning), then the resulting scores represent measures of the specific mental abilities. Traditional cognitive tests are well-standardized, contain items reliably scored, and can be administered to large groups of people at one time. Examples of item formats include multiple choice, sentence completion, short answer, or true-false. Many professionally developed cognitive tests are available commercially and may be considered when there is no significant need to develop a test that refers specifically to the particular job or organization.
+          </p>
+         </div>
+         <div aria-hidden="true" class="fade tab-pane fade tab-pane" role="tabpanel">
+          <div class="comment_form">
+           <div class="form-group">
+            <h5>
+             <b>
+              Excerise - General Questions
+             </b>
+            </h5>
+            <p>
+             1. A can do a work in 15 days and B in 20 days. If they work on it together for 4 days, then the fraction of the work that is left is_______
+            </p>
+            <div class="radio">
+             <div>
+              <div class="ant-radio-group ant-radio-group-outline">
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="1"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 1/4
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="2"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 1/10
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="3"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 7/15
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="4"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 8/15
+                </span>
+               </label>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="form-group">
+            <p>
+             2. A can lay railway track between two given stations in 16 days and B can do the same job in 12 days. With help of C, they did the job in 4 days only. Then, C alone can do the job in ____
+            </p>
+            <div class="radio">
+             <div>
+              <div class="ant-radio-group ant-radio-group-outline">
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="1"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 1/4
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="2"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 1/10
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="3"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 7/15
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="4"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 8/15
+                </span>
+               </label>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="form-group">
+            <p>
+             3. A can lay railway track between two given stations in 16 days and B can do the same job in 12 days. With help of C, they did the job in 4 days only. Then, C alone can do the job in ____
+            </p>
+            <div class="radio">
+             <div>
+              <div class="ant-radio-group ant-radio-group-outline">
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="1"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 1/4
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="2"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 1/10
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="3"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 7/15
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="4"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 8/15
+                </span>
+               </label>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="form-group">
+            <p>
+             4. A can lay railway track between two given stations in 16 days and B can do the same job in 12 days. With help of C, they did the job in 4 days only. Then, C alone can do the job in ____
+            </p>
+            <div class="radio">
+             <div>
+              <div class="ant-radio-group ant-radio-group-outline">
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="1"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 1/4
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="2"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 1/10
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="3"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 7/15
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="4"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 8/15
+                </span>
+               </label>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="form-group">
+            <p>
+             5. A can lay railway track between two given stations in 16 days and B can do the same job in 12 days. With help of C, they did the job in 4 days only. Then, C alone can do the job in ____
+            </p>
+            <div class="radio">
+             <div>
+              <div class="ant-radio-group ant-radio-group-outline">
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="1"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 1/4
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="2"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 1/10
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="3"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 7/15
+                </span>
+               </label>
+               <label class="ant-radio-wrapper">
+                <span class="ant-radio">
+                 <input class="ant-radio-input" type="radio" value="4"/>
+                 <span class="ant-radio-inner">
+                 </span>
+                </span>
+                <span>
+                 8/15
+                </span>
+               </label>
+              </div>
+             </div>
+            </div>
+           </div>
+           <a class="coach_cat thm-btn bg-thm-color-three thm-color-three-shadow btn-rounded">
+            Submit
+           </a>
+          </div>
+          <br/>
+          <div class="comment_form">
+           <h4>
+            Rise Your Doubts
+           </h4>
+           <form>
+            <div class="row">
+             <div class="col-md-6">
+              <div class="form-group">
+               <input autocomplete="off" class="form-control form-control-custom style_2" name="#" placeholder="Your Full Name" type="text"/>
+               <i class="fal fa-user">
+               </i>
+              </div>
+             </div>
+             <div class="col-md-6">
+              <div class="form-group">
+               <input autocomplete="off" class="form-control form-control-custom style_2" name="#" placeholder="Your Email" type="email"/>
+               <i class="fal fa-envelope">
+               </i>
+              </div>
+             </div>
+             <div class="col-md-12">
+              <div class="form-group">
+               <textarea autocomplete="off" class="form-control form-control-custom style_2" name="#" placeholder="Write Message" rows="5"></textarea>
+               <i class="fal fa-pen">
+               </i>
+              </div>
+             </div>
+             <div class="col-md-12">
+              <button class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle" type="submit">
+               Send Comment
+               <!-- -->
+               <i class="fal fa-chevron-right ml-2">
+               </i>
+              </button>
+             </div>
+            </div>
+           </form>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <div class="sidebar">
+        <div class="sidebar_widget info_widgets wow fadeInUp">
+         <ul>
+          <li class="active">
+           <div class="left-side">
+            <i class="fal fa-usd-circle">
+            </i>
+            <h6 class="mb-0">
+             Course Price
+            </h6>
+           </div>
+           <div class="right-side">
+            $99
+           </div>
+          </li>
+          <li>
+           <div class="left-side">
+            <i class="fal fa-user-circle">
+            </i>
+            <h6 class="mb-0">
+             Instructor
+            </h6>
+           </div>
+           <div class="right-side">
+            Warner
+           </div>
+          </li>
+          <li>
+           <div class="left-side">
+            <i class="fal fa-clock">
+            </i>
+            <h6 class="mb-0">
+             Duration
+            </h6>
+           </div>
+           <div class="right-side">
+            360 Hours
+           </div>
+          </li>
+          <li>
+           <div class="left-side">
+            <i class="fal fa-book">
+            </i>
+            <h6 class="mb-0">
+             Lectures
+            </h6>
+           </div>
+           <div class="right-side">
+            20 Lessons
+           </div>
+          </li>
+          <li>
+           <div class="left-side">
+            <i class="fal fa-user-graduate">
+            </i>
+            <h6 class="mb-0">
+             Enrolled
+            </h6>
+           </div>
+           <div class="right-side">
+            963 Students
+           </div>
+          </li>
+          <li>
+           <div class="left-side">
+            <i class="fal fa-flag-alt">
+            </i>
+            <h6 class="mb-0">
+             Language
+            </h6>
+           </div>
+           <div class="right-side">
+            English
+           </div>
+          </li>
+          <li>
+           <div class="left-side">
+            <i class="fal fa-calendar-alt">
+            </i>
+            <h6 class="mb-0">
+             Deadline
+            </h6>
+           </div>
+           <div class="right-side">
+            06 March 2021
+           </div>
+          </li>
+         </ul>
+         <hr/>
+         <cite class="mb-xl-20">
+          Quis autem vel eum iurrepre hende quin ea voluptate velit esse quanihily molestiae consequatur
+          <!-- -->
+         </cite>
+         <a class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle" href="/contact">
+          Enroll Now
+          <i class="fal fa-chevron-right ml-2">
+          </i>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section-padding">
+    <div class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="section-title wow fadeInDown">
+        <p class="subtitle">
+         <i class="fal fa-book">
+         </i>
+         Related Courses
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-xl-4 col-md-6">
+       <div class="coach_block wow fadeInUp" data-wow-delay=".10ms">
+        <div class="coach_img">
+         <img alt="img" class="image-fit" src="assets/images/coach/c7.webp"/>
+         <div class="coach_badges">
+          <span class="tag_badge bg-thm-color-four">
+           Free
+          </span>
+         </div>
+         <a class="thm-btn thm-color-two bg-thm-color-white thm-color-two-shadow btn-circle link" href="/course-details">
+          <i class="fal fa-chevron-right">
+          </i>
+         </a>
+        </div>
+        <div class="coach_caption">
+         <div class="coach_meta">
+          <a class="coach_cat thm-btn bg-thm-color-three thm-color-three-shadow btn-rounded" href="/courses">
+           Aptitude
+          </a>
+          <div class="ratings">
+           <i class="fal fa-star active">
+           </i>
+           <i class="fal fa-star active">
+           </i>
+           <i class="fal fa-star active">
+           </i>
+           <i class="fal fa-star active">
+           </i>
+           <i class="fal fa-star">
+           </i>
+          </div>
+         </div>
+         <h5 class="title mb-xl-20">
+          <a href="/course-details">
+           Most Powerful Thing You Have Self Coaching Scholars
+          </a>
+         </h5>
+         <div class="author">
+          <img alt="img" class="image-fit" src="assets/images/author/1.jpg"/>
+          <a class="thm-color-one" href="/courses">
+           Wilbert A. Toney
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+       <div class="coach_block wow fadeInDown" data-wow-delay=".20ms">
+        <div class="coach_img">
+         <img alt="img" class="image-fit" src="assets/images/coach/c4.webp"/>
+         <div class="coach_badges">
+          <span class="tag_badge bg-thm-color-four">
+           $50
+          </span>
+         </div>
+         <a class="thm-btn thm-color-two bg-thm-color-white thm-color-two-shadow btn-circle link" href="/course-details">
+          <i class="fal fa-chevron-right">
+          </i>
+         </a>
+        </div>
+        <div class="coach_caption">
+         <div class="coach_meta">
+          <a class="coach_cat thm-btn bg-thm-color-three thm-color-three-shadow btn-rounded" href="/courses">
+           Aptitude
+          </a>
+          <div class="ratings">
+           <i class="fal fa-star active">
+           </i>
+           <i class="fal fa-star active">
+           </i>
+           <i class="fal fa-star active">
+           </i>
+           <i class="fal fa-star active">
+           </i>
+           <i class="fal fa-star active">
+           </i>
+          </div>
+         </div>
+         <h5 class="title mb-xl-20">
+          <a href="/course-details">
+           Coach Certification Programs Most Powerful Coach
+          </a>
+         </h5>
+         <div class="author">
+          <img alt="img" class="image-fit" src="assets/images/author/2.jpg"/>
+          <a class="thm-color-one" href="/courses">
+           Emma H. Parish
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+       <div class="coach_block wow fadeInUp" data-wow-delay=".30ms">
+        <div class="coach_img">
+         <img alt="img" class="image-fit" src="assets/images/coach/c9.jpg"/>
+         <div class="coach_badges">
+          <span class="tag_badge bg-thm-color-four">
+           Free
+          </span>
+         </div>
+         <a class="thm-btn thm-color-two bg-thm-color-white thm-color-two-shadow btn-circle link" href="/course-details">
+          <i class="fal fa-chevron-right">
+          </i>
+         </a>
+        </div>
+        <div class="coach_caption">
+         <div class="coach_meta">
+          <a class="coach_cat thm-btn bg-thm-color-three thm-color-three-shadow btn-rounded" href="/courses">
+           Aptitude
+          </a>
+          <div class="ratings">
+           <i class="fal fa-star active">
+           </i>
+           <i class="fal fa-star active">
+           </i>
+           <i class="fal fa-star active">
+           </i>
+           <i class="fal fa-star">
+           </i>
+           <i class="fal fa-star">
+           </i>
+          </div>
+         </div>
+         <h5 class="title mb-xl-20">
+          <a href="/course-details">
+           Matter How Great Your Life Al Ready, We’ll Give Syatem
+          </a>
+         </h5>
+         <div class="author">
+          <img alt="img" class="image-fit" src="assets/images/author/3.jpg"/>
+          <a class="thm-color-one" href="/courses">
+           Junior N. West
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div class="cta_box style_2">
+    <div class="container relative z-2">
+     <div class="bg-thm-color-two cta_box_inner z-2 mb-negative">
+      <img alt="shape" class="shape_1 zoom-fade" src="assets/images/elements/ss3.png"/>
+      <div class="row justify-content-between align-items-center">
+       <div class="col-lg-6">
+        <div class="text_block wow fadeInLeft">
+         <div class="section-title left-align white">
+          <p class="subtitle">
+           <i class="fal fa-book">
+           </i>
+           Our Professionals
+          </p>
+          <h3 class="title">
+           Do You Want to Transform Your Life For Better ?
+          </h3>
+          <a class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle" href="/contact">
+           Contact Us
+           <i class="fal fa-chevron-right ml-2">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="col-lg-5">
+        <div class="image_box relative z-1 wow fadeInRight">
+         <img alt="shape" class="shape_2 rotate_elem" src="assets/images/elements/square_shape.png"/>
+         <img alt="img" class="image-fit" src="assets/images/cta2.png"/>
+         <div class="arrows slideRight">
+          <div class="arrow">
+          </div>
+          <div class="arrow">
+          </div>
+          <div class="arrow">
+          </div>
+          <div class="arrow">
+          </div>
+          <div class="arrow">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="arrows to_up slideTop">
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+     </div>
+    </div>
+   </div>
+   <footer class="footer bg-thm-color-one style_2 style_3 z-1" style="background-image:url(assets/images/elements/element_18.png)">
+    <div class="container relative z-1">
+     <div class="footer_top section-padding">
+      <div class="row">
+       <div class="col-lg-3 col-md-6">
+        <div class="ft_widget ft_about wow fadeInDown">
+         <a class="logo" href="/">
+          <img alt="logo" class="image-fit" src="assets/images/logo-white1.png"/>
+         </a>
+         <ul class="info">
+          <li>
+           <a href="#">
+            256 Elizaberth Ave Str, Brooklyn, CA, 90025
+           </a>
+          </li>
+          <li>
+           <a href="tel:+01234567899">
+            +012 (345) 678 99
+           </a>
+          </li>
+          <li>
+           <a href="mailto:example@example.com">
+            example@example.com
+           </a>
+          </li>
+         </ul>
+         <ul class="social">
+          <li>
+           <a href="#">
+            <i class="fab fa-facebook-f">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <i class="fab fa-twitter">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <i class="fab fa-linkedin">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <i class="fab fa-behance">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <i class="fab fa-youtube">
+            </i>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+        <div class="ft_widget ft_menu wow fadeInUp">
+         <h6 class="ft-title">
+          Our Coach
+         </h6>
+         <ul>
+          <li>
+           <a href="#">
+            Basic Life Coach
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Advance Helath Coach
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Advance Business Coach
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Basic Learn English
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Web Development
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+        <div class="ft_widget ft_menu wow fadeInDown">
+         <h6 class="ft-title">
+          About Us
+         </h6>
+         <ul>
+          <li>
+           <a href="#">
+            Latest Courses
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Mission &amp; Vision
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Our Approach
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Exclusive Advisors
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Join a Career
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+        <div class="ft_widget ft_newsletter wow fadeInUp">
+         <h6 class="ft-title">
+          Newsletter
+         </h6>
+         <p class="mb-xl-20">
+          Sed ut perspici unde omnis iste natus error sit voluptatem accus
+         </p>
+         <form>
+          <input autocomplete="off" name="#" placeholder="Enter Your Email" type="email"/>
+          <button class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle" type="submit">
+           Subscribe Now
+           <i class="fal fa-chevron-right ml-2">
+           </i>
+          </button>
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="footer_bottom">
+      <p class="mb-0">
+       © 2021
+       <a href="#">
+        Wellco
+       </a>
+       . All Rights Reserved, Design By Webtend
+      </p>
+     </div>
+     <img alt="element" class="element_3 rotate_elem" src="assets/images/elements/element_16.png"/>
+     <div class="arrows to_up slideTop">
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+     </div>
+    </div>
+   </footer>
+   <a class="back-to-top ft-sticky" href="#scroll" id="back-to-top">
+    <i class="fal fa-long-arrow-up">
+    </i>
+   </a>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+   {"props":{"pageProps":{}},"page":"/course-ratio","query":{},"buildId":"ihjsRGGSqixX7gJIFIymI","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}
+  </script>
+ </body>
+</html>
