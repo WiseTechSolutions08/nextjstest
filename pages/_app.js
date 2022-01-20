@@ -1,12 +1,26 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Head from "next/head";
+import { Fragment, useEffect, useState } from "react";
+import Preloader from "../src/layout/Preloader";
+import "../styles/globals.css";
+// import "../styles/Radio.css";
 
 function MyApp({ Component, pageProps }) {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
-    <ChakraProvider>
+    <Fragment>
+      <Head>
+        <title>Wellco UpSkill React NextJs Template</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+      </Head>
+      {loading && <Preloader />}
       <Component {...pageProps} />
-    </ChakraProvider>
+    </Fragment>
   );
 }
 
