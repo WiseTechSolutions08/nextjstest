@@ -1,0 +1,809 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta content="width=device-width" name="viewport"/>
+  <meta charset="utf-8"/>
+  <title>
+   Wellco UpSkill React NextJs Template
+  </title>
+  <link href="favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
+  <meta content="4" name="next-head-count"/>
+  <link as="style" href='{% static "/_next/static/css/93942ac8a896644f.css" %}' rel="preload"/>
+  <link data-n-g="" href='{% static "/_next/static/css/93942ac8a896644f.css" %}' rel="stylesheet"/>
+  <noscript data-n-css="">
+  </noscript>
+  <script defer="" nomodule="" src='{% static "/_next/static/chunks/polyfills-5cd94c89d3acac5f.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/webpack-98009c24c517fa8c.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/framework-81eee04dc9c81fd8.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/main-be926a39b31f2a04.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/pages/_app-f91f698cba9abeb9.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/75fc9c18-0edeb0e157862525.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/9956-daf8e164ee1dc1e0.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/6869-9a1777bab5a6d906.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/chunks/pages/contact-d78bd18903786f05.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/0Tyxtc4u3WfHggeY0PoGT/_buildManifest.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/0Tyxtc4u3WfHggeY0PoGT/_ssgManifest.js" %}'>
+  </script>
+  <script defer="" src='{% static "/_next/static/0Tyxtc4u3WfHggeY0PoGT/_middlewareManifest.js" %}'>
+  </script>
+ </head>
+ <body>
+  <div data-reactroot="" id="__next">
+   <div class="preloader">
+    <img alt="preloader" src="assets/images/preloader.svg"/>
+   </div>
+   <aside class="aside_bar aside_bar_left aside_mobile">
+    <a class="logo" href="/">
+     <img alt="logo" src="assets/images/logo1.png"/>
+    </a>
+    <nav>
+     <ul class="main-menu">
+      <li class="menu-item">
+       <a href="http://localhost:3000/">
+        Home
+       </a>
+      </li>
+      <li class="menu-item menu-item-has-children">
+       <a href="#">
+        Courses
+       </a>
+       <ul class="sub-menu" style="display:none">
+        <li class="menu-item">
+         <a href="/courses">
+          Apptitude
+         </a>
+        </li>
+        <li class="menu-item">
+         <a href="/reasoning">
+          Reasoning
+         </a>
+        </li>
+        <li class="menu-item">
+         <a href="/verbal">
+          Verbal
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="menu-item">
+       <a href="/mock">
+        Mock Test
+       </a>
+      </li>
+      <li class="menu-item">
+       <a href="#">
+        Login
+       </a>
+      </li>
+      <li class="menu-item">
+       <a href="/contact">
+        Contacts
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </aside>
+   <div class="aside-overlay trigger-left">
+   </div>
+   <aside class="aside_bar aside_bar_right aside_canvas">
+    <a class="logo pl-0" href="/">
+     <img alt="logo" src="assets/images/logo.png"/>
+    </a>
+    <p>
+     Sed ut perspiciatis unde omnis iste natus error voluptatem accan tium doloremque laudantium totam rem aperiam
+    </p>
+    <div class="sidebar">
+     <div class="sidebar_widget recent_widgets">
+      <h5 class="widget_title">
+       Popular Courses
+      </h5>
+      <ul>
+       <li>
+        <div class="image">
+         <img alt="img" class="image-fit" src="assets/images/coach/small_1.jpg"/>
+        </div>
+        <div class="text">
+         <h6 class="mb-0">
+          <a href="/course-details">
+           How to Become a Life Coach Partner
+          </a>
+         </h6>
+         <p class="mb-0">
+          <strong>
+           By
+          </strong>
+          <a href="/courses">
+           John Foerster
+          </a>
+         </p>
+        </div>
+       </li>
+       <li>
+        <div class="image">
+         <img alt="img" class="image-fit" src="assets/images/coach/small_2.jpg"/>
+        </div>
+        <div class="text">
+         <h6 class="mb-0">
+          <a href="/course-details">
+           How to Solve Health Problem
+          </a>
+         </h6>
+         <p class="mb-0">
+          <strong>
+           By
+          </strong>
+          <a href="/courses">
+           David Sullivan
+          </a>
+         </p>
+        </div>
+       </li>
+       <li>
+        <div class="image">
+         <img alt="img" class="image-fit" src="assets/images/coach/small_3.jpg"/>
+        </div>
+        <div class="text">
+         <h6 class="mb-0">
+          <a href="/course-details">
+           Getting Started Expres And JavaScript
+          </a>
+         </h6>
+         <p class="mb-0">
+          <strong>
+           By
+          </strong>
+          <a href="/courses">
+           Zachary Morin
+          </a>
+         </p>
+        </div>
+       </li>
+      </ul>
+     </div>
+     <div class="sidebar_widget">
+      <h5 class="widget_title">
+       Popular Tags
+      </h5>
+      <div class="tags">
+       <a href="/blog-grid">
+        Business
+       </a>
+       <a href="/blog-grid">
+        Corporate
+       </a>
+       <a href="/blog-grid">
+        HTML
+       </a>
+       <a href="/blog-grid">
+        Art
+       </a>
+       <a href="/blog-grid">
+        Finance
+       </a>
+       <a href="/blog-grid">
+        Investment
+       </a>
+       <a href="/blog-grid">
+        CSS
+       </a>
+       <a href="/blog-grid">
+        Coach
+       </a>
+       <a href="/blog-grid">
+        Planing
+       </a>
+       <a href="/blog-grid">
+        Creative
+       </a>
+       <a href="/blog-grid">
+        Health
+       </a>
+      </div>
+     </div>
+    </div>
+   </aside>
+   <div class="aside-overlay trigger-right">
+   </div>
+   <header class="header header-3" id="header-sticky">
+    <div class="topbar bg-thm-color-two" id="header_top">
+     <div class="container">
+      <div class="row">
+       <div class="col-lg-7">
+        <div class="left-side">
+        </div>
+       </div>
+       <div class="col-lg-5">
+        <ul class="right-side">
+         <li>
+          <a href="tel:0123456789">
+           <i class="fal fa-phone">
+           </i>
+           Call : 012(345) 67 89
+          </a>
+         </li>
+         <li>
+          <a href="mailto:example@example.com">
+           <i class="fal fa-envelope">
+           </i>
+           example@example.com
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="nav_sec">
+     <div class="container">
+      <div class="nav_warp">
+       <nav>
+        <div class="logo">
+         <a href="/">
+          <img alt="logo" class="image-fit" src="assets/images/logo1.png"/>
+         </a>
+        </div>
+        <ul class="main-menu">
+         <li class="menu-item">
+          <a href="http://localhost:3000/">
+           Home
+          </a>
+         </li>
+         <li class="menu-item menu-item-has-children">
+          <a href="#">
+           Courses
+          </a>
+          <ul class="sub-menu">
+           <li class="menu-item">
+            <a href="/courses">
+             Apptitude
+            </a>
+           </li>
+           <li class="menu-item">
+            <a href="/reasoning">
+             Reasoning
+            </a>
+           </li>
+           <li class="menu-item">
+            <a href="/verbal">
+             Verbal
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="menu-item">
+          <a href="/mock">
+           Mock Test
+          </a>
+         </li>
+         <li class="menu-item">
+          <a href="#">
+           Login
+          </a>
+         </li>
+         <li class="menu-item">
+          <a href="/contact">
+           Contacts
+          </a>
+         </li>
+         <li class="menu-item search_trigger">
+          <a href="#">
+           <i class="fas fa-search">
+           </i>
+          </a>
+         </li>
+        </ul>
+        <div class="head_actions">
+         <a class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle" href="/contact">
+          Enroll Now
+          <i class="fal fa-chevron-right ml-2">
+          </i>
+         </a>
+         <button class="head_trigger mobile_trigger" type="button">
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+         </button>
+        </div>
+       </nav>
+      </div>
+     </div>
+    </div>
+    <div class="search-form-wrapper">
+     <div class="close-search-trigger close_trigger">
+      <span>
+      </span>
+      <span>
+      </span>
+     </div>
+     <form class="search-form">
+      <input placeholder="Search..." required="" type="text"/>
+      <button class="search-btn" type="submit">
+       <i class="fal fa-search m-0">
+       </i>
+      </button>
+     </form>
+    </div>
+   </header>
+   <div class="subheader relative z-1" style="background-image:url(assets/images/banner-appi.png)">
+    <div class="container relative z-1">
+     <div class="row">
+      <div class="col-12">
+       <h1 class="page_title">
+        Contact Us
+       </h1>
+       <div class="page_breadcrumb">
+        <nav aria-label="breadcrumb">
+         <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+           <a href="/">
+            Home
+           </a>
+          </li>
+          <li aria-current="page" class="breadcrumb-item active">
+           Contact Us
+          </li>
+         </ol>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <img alt="element" class="element_1 slideRightTwo" src="assets/images/elements/element_19.png"/>
+     <img alt="element" class="element_2 zoom-fade icon-default-height" src="assets/images/elements/element10.png"/>
+     <img alt="element" class="element_3 rotate_elem" src="assets/images/elements/element_20.png"/>
+     <img alt="element" class="element_4 rotate_elem" src="assets/images/elements/element_21.png"/>
+    </div>
+   </div>
+   <section class="section-padding">
+    <div class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="section-title wow fadeInUp">
+        <p class="subtitle">
+         <i class="fal fa-book">
+         </i>
+         Support Team
+        </p>
+        <h3 class="title">
+         We Have a Professional Support Team
+        </h3>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-lg-6">
+       <div class="contact_faq_box shadow_1 wow fadeInDown" data-wow-delay=".30ms">
+        <div class="icon">
+         <img alt="icon" class="image-fit-contain" src="assets/images/icons/icon_14.png"/>
+        </div>
+        <div class="text">
+         <h4>
+          Customer Support
+         </h4>
+         <p>
+          Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium
+         </p>
+         <a class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle" href="/contact">
+          Take A Coupon
+          <i class="fal fa-chevron-right ml-2">
+          </i>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-6">
+       <div class="contact_faq_box shadow_1 wow fadeInUp" data-wow-delay=".40ms">
+        <div class="icon">
+         <img alt="icon" class="image-fit-contain" src="assets/images/icons/icon_15.png"/>
+        </div>
+        <div class="text">
+         <h4>
+          Have Any Questions
+         </h4>
+         <p>
+          Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium
+         </p>
+         <a class="thm-btn bg-thm-color-two thm-color-two-shadow btn-rectangle" href="/contact">
+          Contact Us
+          <i class="fal fa-chevron-right ml-2">
+          </i>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div class="container">
+    <div class="row align-items-center">
+     <div class="col-xl-4 col-lg-5">
+      <div class="section-title left-align wow fadeInDown">
+       <p class="subtitle">
+        <i class="fal fa-book">
+        </i>
+        Contact Us
+       </p>
+       <h3 class="title">
+        Have Any Courses Get In Touch
+       </h3>
+      </div>
+      <div class="contact_info mb-md-80">
+       <ul>
+        <li class="wow fadeInUp">
+         <i class="icon fal fa-map-marker-alt">
+         </i>
+         <div class="text">
+          <h6>
+           Location
+          </h6>
+          <p>
+           354 Oakridge, Camden NJ 08102 - USA
+          </p>
+         </div>
+        </li>
+        <li class="wow fadeInDown">
+         <i class="icon fal fa-envelope-open-text">
+         </i>
+         <div class="text">
+          <h6>
+           Email Address
+          </h6>
+          <p>
+           supportcoachinfo@gmail.com
+          </p>
+         </div>
+        </li>
+        <li class="wow fadeInUp">
+         <i class="icon fal fa-phone">
+         </i>
+         <div class="text">
+          <h6>
+           Contact Us
+          </h6>
+          <p>
+           <strong>
+            Mobile:
+           </strong>
+           +012 (345) 789 99
+          </p>
+          <p>
+           <strong>
+            Hotline:
+           </strong>
+           +563 789 55
+          </p>
+         </div>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="col-xl-8 col-lg-7">
+      <div class="contact_map relative z-1 wow fadeInRight" id="map">
+       <iframe allowfullscreen="" height="100%" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.38704015446!2d90.27923791989463!3d23.780573256239975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1635995617271!5m2!1sen!2sbd" style="border:0" width="100%">
+       </iframe>
+      </div>
+     </div>
+    </div>
+   </div>
+   <section class="section">
+    <div class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="section-title wow fadeInDown">
+        <p class="subtitle">
+         <i class="fal fa-book">
+         </i>
+         Drop A Message
+        </p>
+        <h3 class="title">
+         Have Any Questions Let’s Started Talk
+        </h3>
+       </div>
+      </div>
+     </div>
+     <form class="mf_form_validate ajax_submit wow fadeInUp" enctype="multipart/form-data" method="post">
+      <div class="row">
+       <div class="col-lg-6">
+        <div class="form-group form_style">
+         <label>
+          Full Name
+         </label>
+         <input autocomplete="off" class="form-control" name="name" placeholder="Full Name" type="text"/>
+        </div>
+       </div>
+       <div class="col-lg-6">
+        <div class="form-group form_style">
+         <label>
+          Phone Number
+         </label>
+         <input autocomplete="off" class="form-control" name="phone" placeholder="Phone Number" type="text"/>
+        </div>
+       </div>
+       <div class="col-lg-6">
+        <div class="form-group form_style">
+         <label>
+          Email Address
+         </label>
+         <input autocomplete="off" class="form-control" name="email" placeholder="Email Address" type="email"/>
+        </div>
+       </div>
+       <div class="col-lg-6">
+        <div class="form-group form_style">
+         <label>
+          Subject
+         </label>
+         <input autocomplete="off" class="form-control" name="subject" placeholder="I Would Like To Discuss" type="text"/>
+        </div>
+       </div>
+       <div class="col-lg-12">
+        <div class="form-group form_style">
+         <label>
+          Message
+         </label>
+         <textarea autocomplete="off" class="form-control" name="message" placeholder="Write Message" rows="10"></textarea>
+        </div>
+       </div>
+       <div class="col-lg-12 text-center">
+        <button class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle" type="submit">
+         Send Your Message
+         <i class="fal fa-chevron-right ml-2">
+         </i>
+        </button>
+       </div>
+      </div>
+     </form>
+    </div>
+   </section>
+   <div class="cta_box style_2">
+    <div class="container relative z-2">
+     <div class="bg-thm-color-two cta_box_inner z-2 mb-negative">
+      <img alt="shape" class="shape_1 zoom-fade" src="assets/images/elements/ss3.png"/>
+      <div class="row justify-content-between align-items-center">
+       <div class="col-lg-6">
+        <div class="text_block wow fadeInLeft">
+         <div class="section-title left-align white">
+          <p class="subtitle">
+           <i class="fal fa-book">
+           </i>
+           Our Professionals
+          </p>
+          <h3 class="title">
+           Do You Want to Transform Your Life For Better ?
+          </h3>
+          <a class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle" href="/contact">
+           Contact Us
+           <i class="fal fa-chevron-right ml-2">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="col-lg-5">
+        <div class="image_box relative z-1 wow fadeInRight">
+         <img alt="shape" class="shape_2 rotate_elem" src="assets/images/elements/square_shape.png"/>
+         <img alt="img" class="image-fit" src="assets/images/cta2.png"/>
+         <div class="arrows slideRight">
+          <div class="arrow">
+          </div>
+          <div class="arrow">
+          </div>
+          <div class="arrow">
+          </div>
+          <div class="arrow">
+          </div>
+          <div class="arrow">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="arrows to_up slideTop">
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+     </div>
+    </div>
+   </div>
+   <footer class="footer bg-thm-color-one style_2 style_3 z-1" style="background-image:url(assets/images/elements/element_18.png)">
+    <div class="container relative z-1">
+     <div class="footer_top section-padding">
+      <div class="row">
+       <div class="col-lg-3 col-md-6">
+        <div class="ft_widget ft_about wow fadeInDown">
+         <a class="logo" href="/">
+          <img alt="logo" class="image-fit" src="assets/images/logo-white1.png"/>
+         </a>
+         <ul class="info">
+          <li>
+           <a href="#">
+            256 Elizaberth Ave Str, Brooklyn, CA, 90025
+           </a>
+          </li>
+          <li>
+           <a href="tel:+01234567899">
+            +012 (345) 678 99
+           </a>
+          </li>
+          <li>
+           <a href="mailto:example@example.com">
+            example@example.com
+           </a>
+          </li>
+         </ul>
+         <ul class="social">
+          <li>
+           <a href="#">
+            <i class="fab fa-facebook-f">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <i class="fab fa-twitter">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <i class="fab fa-linkedin">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <i class="fab fa-behance">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <i class="fab fa-youtube">
+            </i>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+        <div class="ft_widget ft_menu wow fadeInUp">
+         <h6 class="ft-title">
+          Our Coach
+         </h6>
+         <ul>
+          <li>
+           <a href="#">
+            Basic Life Coach
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Advance Helath Coach
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Advance Business Coach
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Basic Learn English
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Web Development
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+        <div class="ft_widget ft_menu wow fadeInDown">
+         <h6 class="ft-title">
+          About Us
+         </h6>
+         <ul>
+          <li>
+           <a href="#">
+            Latest Courses
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Mission &amp; Vision
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Our Approach
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Exclusive Advisors
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Join a Career
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+        <div class="ft_widget ft_newsletter wow fadeInUp">
+         <h6 class="ft-title">
+          Newsletter
+         </h6>
+         <p class="mb-xl-20">
+          Sed ut perspici unde omnis iste natus error sit voluptatem accus
+         </p>
+         <form>
+          <input autocomplete="off" name="#" placeholder="Enter Your Email" type="email"/>
+          <button class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle" type="submit">
+           Subscribe Now
+           <i class="fal fa-chevron-right ml-2">
+           </i>
+          </button>
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="footer_bottom">
+      <p class="mb-0">
+       © 2021
+       <a href="#">
+        Wellco
+       </a>
+       . All Rights Reserved, Design By Webtend
+      </p>
+     </div>
+     <img alt="element" class="element_3 rotate_elem" src="assets/images/elements/element_16.png"/>
+     <div class="arrows to_up slideTop">
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+      <div class="arrow">
+      </div>
+     </div>
+    </div>
+   </footer>
+   <a class="back-to-top ft-sticky" href="#scroll" id="back-to-top">
+    <i class="fal fa-long-arrow-up">
+    </i>
+   </a>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+   {"props":{"pageProps":{}},"page":"/contact","query":{},"buildId":"0Tyxtc4u3WfHggeY0PoGT","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}
+  </script>
+ </body>
+</html>
