@@ -17,7 +17,9 @@ def parse_args():
 
 def inspect_parser(soup, tag):
     for x in soup.find_all(tag):
-        if x.get('src') and x['src'].startswith('/_next/'):
+        # if x.get('src') and x['src'].startswith('/_next/'):
+
+        if x.get('src'):
             x['src'] = "{% static \"" + x['src'] + "\" %}"
         if x.get('href') and x['href'].startswith('/_next/'):
             x['href'] = "{% static \"" + x['href'] + "\" %}"
@@ -30,6 +32,7 @@ def render_html_static():
         soup.insert(0, '{% load static %}')
         inspect_parser(soup, 'link')
         inspect_parser(soup, 'script')
+        inspect_parser(soup, 'img')
         fout = open(html_file, 'wb')
         fout.write(soup.prettify('utf-8'))
         fout.close()
